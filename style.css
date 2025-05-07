@@ -1,38 +1,47 @@
 
 body {
-    font-family: sans-serif;
-    background-color: #f6f1e7;
-    color: #4a2e13;
+    font-family: Georgia, serif;
     margin: 0;
     padding: 0;
+    background: #f6e9d7;
+    color: #5a2e0d;
 }
 header {
-    background-color: #d66a00;
+    background: #b56a2c;
     color: white;
     padding: 40px 20px;
     text-align: center;
 }
-header button {
-    background-color: white;
-    border: none;
+.button {
+    display: inline-block;
+    background: #8b3e10;
+    color: white;
     padding: 10px 20px;
-    font-weight: bold;
-    margin-top: 10px;
+    text-decoration: none;
+    margin-top: 15px;
 }
 section {
-    padding: 40px 20px;
+    padding: 30px 20px;
 }
 .product {
-    background-color: #fff5e0;
+    background: white;
+    margin: 20px auto;
     padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #e0c9a6;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 8px;
 }
 .product img {
     max-width: 100%;
-    height: auto;
+    border-radius: 6px;
 }
-a {
-    color: #d66a00;
-    text-decoration: none;
+.about, .steps {
+    background: #eed9b9;
+    text-align: center;
+}
+footer {
+    background: #5a2e0d;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
