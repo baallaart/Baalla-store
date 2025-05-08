@@ -5,22 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Baalla Art & Craft</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .subtitle {
+      font-style: italic;
+      font-size: 16px;
+      color: #663300;
+      margin-top: -10px;
+    }
+
+    .explore-section {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .explore-section a.button {
+      background-color: #cc6600;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .explore-section a.button:hover {
+      background-color: #994d00;
+    }
+  </style>
 </head>
 <body>
   <main class="container">
     <img src="homepage.png" alt="Baalla Homepage" class="main-image" />
-    <a href="explore.html" class="button">Explore Our Collection</a>
-    <a href="cart.html" class="button">Buy Now</a>
-    <a href="#" class="button" onclick="redirectToWhatsApp()">Message us on WhatsApp</a>
-  </main>
+    <h2 class="subtitle">Promoting Nepalese Art and Craft</h2>
 
-  <script>
-    function redirectToWhatsApp() {
-      const proceed = confirm("You're about to open WhatsApp. Continue?");
-      if (proceed) {
-        window.open("https://wa.me/614XXXXXXXX?text=Hi%20I%20want%20to%20order%20your%20gift%20box", "_blank");
-      }
-    }
-  </script>
+    <div class="explore-section">
+      <p>Explore our handcrafted treasures including Aakhi Jhyal, Singing Bowls, and more.</p>
+      <a href="explore.html" class="button">Explore Our Collection</a>
+    </div>
+  </main>
 </body>
 </html>
