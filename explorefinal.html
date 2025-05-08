@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore - Baalla</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .image-wrapper {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      max-width: 700px;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hotspot {
+      position: absolute;
+      width: 25%;
+      height: 10%;
+      top: 75%;
+      cursor: pointer;
+    }
+
+    .paypal { left: 5%; }
+    .whatsapp { left: 37.5%; }
+    .facebook { right: 5%; }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #cc6600;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="image-wrapper">
+      <img src="explore.png" alt="Explore Baalla Products" />
+      <a href="https://www.paypal.com/qrcodes/managed/11ce7942-3dc3-410c-b9d0-a5a3ebf68109?utm_source=consapp_download" class="hotspot paypal" target="_blank" aria-label="PayPal"></a>
+      <a href="https://wa.me/61410374748?text=Hi%20I%20want%20to%20order%20your%20gift%20box" class="hotspot whatsapp" target="_blank" aria-label="WhatsApp"></a>
+      <a href="https://www.facebook.com/share/15ajnJsZF8/?mibextid=wwXIfr" class="hotspot facebook" target="_blank" aria-label="Facebook"></a>
+    </div>
+    <a href="index.html" class="button">Back to Home</a>
+  </main>
+</body>
+</html>
