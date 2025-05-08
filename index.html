@@ -10,6 +10,17 @@
   <main class="container">
     <img src="homepage.png" alt="Baalla Homepage" class="main-image" />
     <a href="explore.html" class="button">Explore Our Collection</a>
+    <a href="cart.html" class="button">Buy Now</a>
+    <a href="#" class="button" onclick="redirectToWhatsApp()">Message us on WhatsApp</a>
   </main>
+
+  <script>
+    function redirectToWhatsApp() {
+      const proceed = confirm("You're about to open WhatsApp. Continue?");
+      if (proceed) {
+        window.open("https://wa.me/614XXXXXXXX?text=Hi%20I%20want%20to%20order%20your%20gift%20box", "_blank");
+      }
+    }
+  </script>
 </body>
 </html>
