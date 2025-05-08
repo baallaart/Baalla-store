@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #fff8f0;
+}
+
+header {
+  background: #ff9933;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 300px;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: #cc6600;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.payment-options img {
+  margin-top: 10px;
+}

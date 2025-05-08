@@ -7,9 +7,41 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="container">
-    <img src="homepage.png" alt="Baalla Homepage" class="main-image" />
-    <a href="explore.html" class="button">Explore Our Collection</a>
+  <header>
+    <h1>Baalla Art & Craft</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart</a>
+      <a href="#" onclick="redirectToWhatsApp()">WhatsApp</a>
+      <a href="https://facebook.com/yourpage" target="_blank">Facebook</a>
+      <a href="mailto:baallaart@gmail.com">Email</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product">
+      <img src="giftbox.jpg" alt="Baalla Gift Box" onclick="showBuyOption()" />
+      <div id="buy-box" style="display: none;">
+        <button onclick="goToCart()">Buy Now</button>
+      </div>
+    </section>
   </main>
+
+  <script>
+    function showBuyOption() {
+      document.getElementById("buy-box").style.display = "block";
+    }
+
+    function goToCart() {
+      window.location.href = "cart.html";
+    }
+
+    function redirectToWhatsApp() {
+      const proceed = confirm("You are about to open WhatsApp to contact us. Continue?");
+      if (proceed) {
+        window.open("https://wa.me/614XXXXXXXX?text=Hi%20I%20want%20to%20order%20your%20gift%20box", "_blank");
+      }
+    }
+  </script>
 </body>
 </html>
