@@ -13,8 +13,7 @@
 
     .hero {
       position: relative;
-      width: 100%;
-      max-width: 1200px;
+      max-width: 768px;
       margin: auto;
     }
 
@@ -23,22 +22,23 @@
       display: block;
     }
 
+    /* The overlay precisely over the button (adjusted for typical 1152x768 layout) */
     .button-overlay {
       position: absolute;
-      bottom: 45px;
+      top: 87.2%; /* precise Y% for 1152x768 */
       left: 50%;
       transform: translateX(-50%);
-      width: 320px;
-      height: 60px;
+      width: 280px;
+      height: 55px;
       cursor: pointer;
       z-index: 10;
     }
 
     @media (max-width: 768px) {
       .button-overlay {
-        bottom: 30px;
-        width: 280px;
-        height: 55px;
+        top: 88.5%;
+        width: 240px;
+        height: 48px;
       }
     }
   </style>
