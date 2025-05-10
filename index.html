@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Baalla</title>
-  <link rel="stylesheet" href="style.css">
   <style>
     body {
       margin: 0;
@@ -24,26 +23,21 @@
       display: block;
     }
 
-    .cta-button {
+    .button-overlay {
       position: absolute;
-      bottom: 40px;
-      right: 30px;
-      background-color: #cc6600;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 6px;
-      font-weight: bold;
-      font-size: 16px;
-      text-decoration: none;
+      bottom: 55px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 280px;
+      height: 55px;
+      cursor: pointer;
     }
 
     @media (max-width: 768px) {
-      .cta-button {
-        font-size: 14px;
-        padding: 10px 16px;
-        bottom: 25px;
-        right: 20px;
+      .button-overlay {
+        bottom: 40px;
+        width: 240px;
+        height: 50px;
       }
     }
   </style>
@@ -51,8 +45,8 @@
 <body>
   <main>
     <div class="hero">
-      <img src="homepage.png" alt="Baalla Hero Image">
-      <a href="explore.html" class="cta-button">Explore about us →</a>
+      <img src="homepage.png" alt="Baalla Homepage" />
+      <a href="explore.html" class="button-overlay" aria-label="Explore about us"></a>
     </div>
   </main>
 </body>
