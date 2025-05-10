@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Baalla</title>
+  <title>Baalla Arts</title>
   <style>
     body {
       margin: 0;
@@ -25,19 +25,20 @@
 
     .button-overlay {
       position: absolute;
-      bottom: 55px;
+      bottom: 45px;
       left: 50%;
       transform: translateX(-50%);
-      width: 280px;
-      height: 55px;
+      width: 320px;
+      height: 60px;
       cursor: pointer;
+      z-index: 10;
     }
 
     @media (max-width: 768px) {
       .button-overlay {
-        bottom: 40px;
-        width: 240px;
-        height: 50px;
+        bottom: 30px;
+        width: 280px;
+        height: 55px;
       }
     }
   </style>
@@ -45,7 +46,7 @@
 <body>
   <main>
     <div class="hero">
-      <img src="homepage.png" alt="Baalla Homepage" />
+      <img src="homepage.png" alt="Baalla Hero Image" />
       <a href="explore.html" class="button-overlay" aria-label="Explore about us"></a>
     </div>
   </main>
